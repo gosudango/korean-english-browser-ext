@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Korean Helper",
+  "version": "1.0",
+
+  "web_accessible_resources": [
+    {
+      "resources": ["dictionary.json"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
